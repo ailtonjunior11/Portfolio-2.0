@@ -1,3 +1,4 @@
 {
-    "editor.fontFamily": "Quicksand"
+    "editor.fontFamily": "Quicksand",
+    "liveServer.settings.port": 5501
 }
