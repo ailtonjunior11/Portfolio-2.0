@@ -14,9 +14,12 @@
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--Bootstrap-Fim-->
+    <!--CSS da página-->
     <link rel="stylesheet" href="styles.css">
-
-    <script src="menu.js" defer></script>
+    <!--CSS da página fim-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="reveal.js" defer></script>
+    <script src="script.js" defer></script>
 
     <title>Portfólio</title>
 </head>
@@ -25,11 +28,12 @@
 
     <header>
         <div class="interface">
+            <!--Logo-->
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="Logo do Portfólio">
+                    <img src="img/logo-topo.png" alt="Logo do Portfólio" height="80">
                 </a>
-            </div><!--Logo-->
+            </div>
 
             <nav class="menu-desktop">
                 <ul>
@@ -40,11 +44,12 @@
                 </ul>
             </nav>
 
+            <!--Botao-contato-->
             <div class="botao-contato">
                 <a href="#contatos">
                     <button>Contatos</button>
                 </a>
-            </div><!--Botao-contato-->
+            </div>
 
             <div class="botao-abrir-menu" id="botao-menu">
                 <i class="bi bi-list"></i>
@@ -70,71 +75,90 @@
         </div><!--Interface-->
     </header>
 
+    <!--Container principal-->
     <main>
+        <!--Topo-do-site-->
         <section id="inicio" class="topo-do-site">
+            <!--interface-->
             <div class="interface">
+                <!--flex-->
                 <div class="flex">
-                    <div class="texto-topo-site">
-                        <h1>OLÁ MUNDO, EU SOU O AILTON JUNIOR, SEJAM BEM-VINDOS AO MEU PORTFÓLIO<span>!</span></h1>
-                        <p>Transformando ideias em códigos, estou pronto para alcançar objetivos e apresentar os
+                    <!--texto-topo-site-->
+                    <div class="texto-topo-site efeito-texto-topo">
+                        <h1 class="text-top">OLÁ MUNDO, EU SOU O AILTON JUNIOR, SEJAM BEM-VINDOS AO MEU
+                            PORTFÓLIO<span>!</span></h1>
+                        <p class="paragrafo-top">Transformando ideias em códigos, estou pronto para alcançar objetivos e
+                            apresentar os
                             melhores resultados.</p>
 
+                        <!--botao-contato-->
                         <div class="botao-contato">
                             <a href="#entre-em-contato">
                                 <button>Entre em contato</button>
                             </a>
-                        </div><!--botao-contato-->
-                    </div><!--texto-topo-site-->
+                        </div>
+                    </div>
+                    <!--img-topo-site-->
+                    <div class="img-topo-site efeito-img-topo">
+                        <img src="img/foto-topo.png" alt="Foto Topo" height="350">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="img-topo-site">
-                        <img src="img/photo-topo.png" alt="Foto Topo" height="330">
-                    </div><!--img-topo-site-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--Topo-do-site-->
-
+        <!--Especialidades-->
         <secction id="skills" class="especialidades">
+            <!--interface-->
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <!--flex-->
                 <div class="flex">
-                    <div class="especialidades-box">
+                    <!--especialidades-box-->
+                    <div class="especialidades-box efeito-especialidades1">
                         <i class="bi bi-code-square"></i>
                         <h3>Web</h3>
-                        <p>Desenvolvimento web é uma área da tecnologia que se concentra na construção de sites,
-                            aplicativos, softwares e bancos de dados, usando tecnologias como HTML, CSS e JavaScript,
-                            além de de bibliotecas populares como React e Node.js. Essas tecnologias, ferramentas e
-                            bibliotecas, de
-                            alguma forma, moldam a
-                            internet como a conhecemos hoje. Hoje com todo o conhecimento e pratica que adquiri nessa
-                            área, tenho a capacidade para compreender, manipular e
-                            utilizar linguagens de programação a fim de criar sistemas complexos voltados para o serviço
+                        <p><span>Desenvolvimento web é uma área da tecnologia que se concentra na construção de sites,
+                                aplicativos, softwares e bancos de dados, usando tecnologias como HTML, CSS
+                                e JavaScript, além de de bibliotecas populares como React e Node.js.</span> Essas
+                            tecnologias,
+                            ferramentas e
+                            bibliotecas, de alguma forma, moldam a internet como a conhecemos hoje. Hoje com todo o
+                            conhecimento e pratica que adquiri nessa
+                            área, tenho a capacidade para compreender, manipular e utilizar linguagens de programação a
+                            fim de criar sistemas complexos voltados para o serviço
                             do usuário.</p>
-                    </div><!--especialidades-box-->
-
-                    <div class="especialidades-box">
+                    </div>
+                    <!--especialidades-box-->
+                    <div class="especialidades-box efeito-especialidades2">
                         <i class="bi bi-cart"></i>
                         <h3>Loja Online</h3>
-                        <p>Desenvolver um projeto e-commerce é essencial para criar e manter lojas
-                            virtuais. Garantindo que a estrutura do software e a
-                            interface da loja funcionem perfeitamente, usando tecnologias como HTML, CSS e JavaScript,
-                            além de bibliotecas populares como React. No entanto, um sistema bem estruturado e
+                        <p><span>Desenvolver um projeto e-commerce é essencial para criar e manter lojas
+                                virtuais. Garantindo que a estrutura do software e a
+                                interface da loja funcionem perfeitamente, usando tecnologias como HTML, CSS e
+                                JavaScript,
+                                além de bibliotecas populares como React.</span> No entanto, um sistema bem estruturado
+                            e
                             funcional, com certeza irá expandir o crescimento de qualquer loja no mundo virtual,
                             aumentar o alcance em relação a captar mais clientes e consolidar sua credibilidade dentro
                             do mercado.
                         </p>
-                    </div><!--especialidades-box-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </secction><!--Especialidades-->
+                    </div>
+                </div>
+            </div>
+        </secction>
 
+        <!--Sobre-->
         <section id="sobre" class="sobre">
+            <!--Interface-->
             <div class="interface">
+                <!--Flex-->
                 <div class="flex">
-                    <div class="img-sobre">
+                    <!--Imagem-Sobre-->
+                    <div class="img-sobre efeito-img-sobre">
                         <img src="img/photo-sobre.jpg" alt="Foto" height="400">
-                    </div><!--Imagem-Sobre-->
-
-                    <div class="texto-sobre">
+                    </div>
+                    <!--Texto-Sobre-->
+                    <div class="texto-sobre efeito-texto-sobre">
                         <h2>MUITO PRAZER, <span>SOU AILTON JUNIOR.</span></h2>
                         <p>Sou um
                             Desenvolvedor Front-End e um apaixonado pela tecnologia em geral. Na minha trajetória
@@ -148,23 +172,29 @@
                             do trabalho em
                             equipe, pois vejo um crescimento bem mais acelerado dentro de uma empresa quando todos
                             trabalham em sintonia!</p>
+                        <!--Botao-Social-->
                         <div class="botao-social">
                             <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
                             <a href="#"><button><i class="bi bi-github"></i></button></a>
-                        </div><!--Botao-Social-->
-                    </div><!--Texto-Sobre-->
-                </div><!--Flex-->
-            </div><!--Interface-->
-        </section><!--Sobre-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!--Projetos-->
         <section id="id-projetos" class="projetos">
+            <!--Interface-->
             <div class="interface">
+                <!--Titulo projetos-->
                 <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+                <!--Flex-->
                 <div class="flex">
-                    <div class="img-projeto" style="background-image: url(img/burger-place.png);">
+                    <!--Projeto hamburgueria-->
+                    <div class="img-projeto efeito-img-projeto1" style="background-image: url(img/dev-turismo.jpg);">
                         <div class="overlay">
-                            <h4>Burger Place</h4>
-                            <a href="https://ailtonjunior11.github.io/Burger-Place/" target="_blank">
+                            <h4>Dev turismo</h4>
+                            <a href="https://ailtonjunior11.github.io/tourist-slider/" target="_blank">
                                 <button>Vizualizar Projeto</button>
                             </a>
 
@@ -175,8 +205,10 @@
                                 <i class="bi bi-filetype-js"></i>
                             </div>
                         </div>
-                    </div><!--Projeto-Login-->
-                    <div class="img-projeto" style="background-image: url(img/super-mario-bros.png);">
+                    </div>
+                    <!--Projeto-Mario-->
+                    <div class="img-projeto efeito-img-projeto2"
+                        style="background-image: url(img/super-mario-bros.png);">
                         <div class="overlay">
                             <h4>Super Mario Bros</h4>
                             <a href="https://ailtonjunior11.github.io/Super-Mario-Bros/" target="_blank">
@@ -190,10 +222,12 @@
                                 <i class="bi bi-filetype-js"></i>
                             </div>
                         </div>
-                    </div><!--Projeto-Mario-->
-                    <div class="img-projeto" style="background-image: url(img/conversor-moedas.png);">
+                    </div>
+                    <!--Projeto conversor de moedas-->
+                    <div class="img-projeto efeito-img-projeto3"
+                        style="background-image: url(img/conversor-moedas.png);">
                         <div class="overlay">
-                            <h4>Conversor de Moedas</h4>
+                            <h4 class="conversor">Conversor de Moedas</h4>
                             <a href="https://ailtonjunior11.github.io/Conversor-de-Moedas/" target="_blank">
                                 <button>Vizualizar Projeto</button>
                             </a>
@@ -205,25 +239,12 @@
                                 <i class="bi bi-filetype-js"></i>
                             </div>
                         </div>
-                    </div><!--Projeto-Conversor-->
-                    <div class="img-projeto" style="background-image: url(img/cronometro.png);">
+                    </div>
+                    <!--Projeto captura de leads-->
+                    <div class="img-projeto efeito-img-projeto4"
+                        style="background-image: url(img/pagina-captura-leads.png);">
                         <div class="overlay">
-                            <h4>Cronometro</h4>
-                            <a href="https://ailtonjunior11.github.io/Projeto-Cronometro/" target="_blank">
-                                <button>Vizualizar Projeto</button>
-                            </a>
-
-                            <h5>Tecnologias usadas :</h5>
-                            <div class="íconis-projeto">
-                                <i class="bi bi-filetype-html"></i>
-                                <i class="bi bi-filetype-css"></i>
-                                <i class="bi bi-filetype-js"></i>
-                            </div>
-                        </div>
-                    </div><!--Projeto-Cronometro-->
-                    <div class="img-projeto" style="background-image: url(img/pagina-captura-leads.png);">
-                        <div class="overlay">
-                            <h4>Pagina Captura Leads</h4>
+                            <h4 class="leads">Pagina Captura Leads</h4>
                             <a href="https://ailtonjunior11.github.io/Pagina-Captura-Leads/" target="_blank">
                                 <button>Vizualizar Projeto</button>
                             </a>
@@ -234,65 +255,64 @@
                                 <i class="bi bi-filetype-css"></i>
                             </div>
                         </div>
-                    </div><!--Projeto-Lista-de-Contatos-->
-                    <div class="img-projeto" style="background-image: url(img/jokenpo.png);">
-                        <div class="overlay">
-                            <h4>JokenPo</h4>
-                            <a href="https://ailtonjunior11.github.io/Projeto-JokenPo/" target="_blank">
-                                <button>Vizualizar Projeto</button>
-                            </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <h5>Tecnologias usadas :</h5>
-                            <div class="íconis-projeto">
-                                <i class="bi bi-filetype-html"></i>
-                                <i class="bi bi-filetype-css"></i>
-                                <i class="bi bi-filetype-js"></i>
-                            </div>
-                        </div>
-                    </div><!--Projeto-JokenPo-->
-                </div><!--Flex-->
-            </div><!--Interface-->
-        </section><!--Projetos-->
-
+        <!--Formulario-->
         <section id="entre-em-contato" class="formulario">
+            <!--Interface-->
             <div class="interface">
+                <!--Titulo do formulario-->
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <!--Formulario-->
                 <form action="https://formsubmit.co/ailtonjunior.dev.fullstack@gmail.com" method="POST">
-                    <input type="text" name="nome" placeholder="Seu nome completo:" required>
-                    <input type="text" name="email" placeholder="Seu e-mail:" required>
-                    <input type="text" name="telefone" placeholder="Seu celular:">
-                    <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                    <div class="botao-enviar"><input type="submit" value="ENVIAR"></div>
-                </form><!--Formulario-->
-            </div><!--Interface-->
-        </section><!--Formulario-->
+                    <input class="input1" type="text" name="nome" placeholder="Seu nome completo:" required>
+                    <input class="input2" type="text" name="email" placeholder="Seu e-mail:" required>
+                    <input class="input3" type="text" name="telefone" placeholder="Seu celular:">
+                    <textarea class="efeito-textarea" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                    <div class="botao-enviar efeito-botao-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer id="contatos">
+    <!--Rodapé-->
+    <footer id="contatos" class="contacts">
+        <!--Interface-->
         <div class="interface">
+            <!--Line-Footer-->
             <div class="line-footer">
+                <!--Flex-->
                 <div class="flex">
+                    <!--Logo-Footer-->
                     <div class="logo-footer">
-                        <img src="img/logo.png" alt="Logo Full Stack">
-                    </div><!--Logo-Footer-->
+                        <a href="index.html">
+                            <img src="img/logo-topo.png" alt="Logo do Portfólio" height="80">
+                        </a>
+                    </div>
+                    <!--Botao-Social-->
                     <div class="botao-social">
                         <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
                         <a href="#"><button><i class="bi bi-github"></i></button></a>
-                    </div><!--Botao-Social-->
+                    </div>
+                    <!--Botao-Topo-->
                     <div class="botao-topo">
                         <a href="#"><button><i class="bi bi-arrow-up-circle-fill"></i></button></a>
-                    </div><!--Botao-Topo-->
-                </div><!--Flex-->
-            </div><!--Line-Footer-->
-
+                    </div>
+                </div>
+            </div>
+            <!--Line-Footer-Borda-->
             <div class="line-footer borda">
+                <!--Email-->
                 <p><i class="bi bi-envelope-fill"></i> <a
                         href="mailto:ailtonjr11.oficial@gmail.com">ailtonjr11.oficial@gmail.com</a>
                 </p>
-                <p class="copyright"><i class="bi bi-c-circle"></i> Developed by <span>Ailton Junior</span>
-                    Front-End</i></p>
-            </div><!--Line-Footer-Borda-->
-        </div><!--Interface-->
+                <!--Direitos-->
+                <p class="copyright"><i class="bi bi-c-circle"></i> Developed by <span>Ailton Junior</span></i></p>
+            </div>
+        </div>
     </footer>
 
 </body>
